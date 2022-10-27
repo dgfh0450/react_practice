@@ -1,0 +1,9 @@
+.nav_inactive {
+    display: block;
+    width: 120px;
+    border: 1px black solid;
+}
+
+.nav_active {
+    border: 1px red solid;
+}
