@@ -1,12 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Article from './components/Artilce';
+import Food from './components/Food';
+import Header from './components/Header';
+import Influencer from './components/Influencer';
+import Main from './components/Main';
+import Nav from './components/Nav';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <h2>깨달아 버린건가.. 깃허브</h2>
-
-    </div>
+    <BrowserRouter>
+      <Header></Header>
+      <Nav></Nav>
+      <Routes>
+        <Route path='/' element={<Main></Main>}></Route>
+        <Route path='/content/food' element={<Food></Food>}></Route>
+        <Route path='/content/influencer' element={<Influencer></Influencer>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,23 @@
+#bulgogi {
+    background-image: url('../image/bulgogi.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#bibimbap {
+    background-image: url('../image/bibimbap.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#kimchi {
+    background-image: url('../image/kimchi.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pork {
+    background-image: url('../image/pork.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,26 @@
+.Main_body {
+    display: flex;
+    border: 1px black solid;
+    justify-content: space-around;
+    
+}
+
+.inactive {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 1px black solid;
+}
+
+#K-FOOD {
+    background-image: url('../image/k-food.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#K-INFLUENCER {
+    
+    background-image: url('../image/influencer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

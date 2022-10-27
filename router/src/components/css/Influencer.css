@@ -1,0 +1,23 @@
+#son {
+    background-image: url('../image/son.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bts {
+    background-image: url('../image/bts.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blackpink {
+    background-image: url('../image/blackpink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#faker {
+    background-image: url('../image/faker.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
