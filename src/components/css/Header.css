@@ -1,0 +1,13 @@
+.Header_body { 
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.Header_body a {
+    color: black;
+    text-decoration: none;
+}

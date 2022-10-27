@@ -1,0 +1,20 @@
+.Footer_body {
+    width: 100%;
+    height: calc(10% - 20px);
+    border: 1px black solid;
+    position: relative;
+}
+
+.Footer_body p:first-of-type {
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    bottom:10%;
+}
+
+.Footer_body p:last-of-type {
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}

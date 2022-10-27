@@ -1,0 +1,21 @@
+.Update_body {
+    display: flex;
+    width: 100%;
+}
+.Update_body input{
+    width: 200px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.Update_body input:first-of-type {
+    margin-bottom: 10px;
+}
+
+.Update_body button {
+    float: right;
+    width: 100px;
+    height: 50px;
+}
