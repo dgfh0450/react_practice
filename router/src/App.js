@@ -4,8 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
-      test commit
+      <h2>깨달아 버린건가.. 깃허브</h2>
+
     </div>
   );
 }
