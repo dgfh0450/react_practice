@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Article from './components/Artilce';
 import Food from './components/Food';
+import Food_Article from './components/Food_Article';
 import Header from './components/Header';
 import Influencer from './components/Influencer';
 import Main from './components/Main';
@@ -15,6 +16,7 @@ function App(props) {
       <Routes>
         <Route path='/' element={<Main></Main>}></Route>
         <Route path='/content/food' element={<Food></Food>}></Route>
+        <Route path='/content/food/:foods' element={<Food_Article></Food_Article>}></Route>
         <Route path='/content/influencer' element={<Influencer></Influencer>}></Route>
       </Routes>
     </BrowserRouter>
