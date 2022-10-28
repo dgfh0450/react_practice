@@ -6,11 +6,11 @@ import Korea from './image/korea.jpg'
 function Main(props) {
     return (
         <div className='Main_body'>
-            <img src={Korea}></img>
-            <NavLink  to='/content/food' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='K-FOOD'></NavLink>
-            <NavLink  to='/content/influencer' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='K-INFLUENCER'></NavLink>
-            <NavLink  to='/content/contents' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='K-CONTENT'></NavLink>
-            <NavLink  to='/content/tour' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='K-TOUR'></NavLink>
+            <img src={Korea} id='korea'></img>
+            <NavLink  to='/content/food' className={({ isActive }) => isActive ? 'active' : 'main_inactive'} id='K-FOOD'></NavLink>
+            <NavLink  to='/content/influencer' className={({ isActive }) => isActive ? 'active' : 'main_inactive'} id='K-INFLUENCER'></NavLink>
+            <NavLink  to='/content/contents' className={({ isActive }) => isActive ? 'active' : 'main_inactive'} id='K-CONTENT'></NavLink>
+            <NavLink  to='/content/tour' className={({ isActive }) => isActive ? 'active' : 'main_inactive'} id='K-TOUR'></NavLink>
         </div>
     );
 }

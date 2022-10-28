@@ -1,15 +1,9 @@
 .Main_body {
     display: flex;
-    border: 1px black solid;
-    justify-content: space-around;
-    
-}
-
-.inactive {
-    display: block;
-    width: 120px;
-    height: 120px;
-    border: 1px black solid;
+    width: 100%;
+    border: 1px red solid;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
 #K-FOOD {
@@ -23,4 +17,34 @@
     background-image: url('../image/influencer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+._body {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+
+.inactive {
+    display: block;
+    width: 280px;
+    height: 280px;
+    float: left;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+.main_inactive {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+}
+
+#korea {
+    border: 1px black solid;
+    width: 600px;
+    margin : 0 100px;
+    margin-bottom: 10px;
 }

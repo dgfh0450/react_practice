@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './css/Header.css'
 
 function Header(props) {
     return (
-        <div>
-            <Link to='/'><h1>REACT ROUTE 연습 블로그</h1></Link>
+        <div className='Header_body'>
+            <NavLink to='/' className={({isActive})=>isActive ? 'header_active' : 'header_inactive'}><h1>REACT ROUTE 실습 BLOG</h1></NavLink>            
         </div>
     );
 }

@@ -1,0 +1,17 @@
+.Header_body {
+    border: 1px black solid;
+    margin-bottom: 20px;
+}
+
+.header_inactive {
+    color: red;
+}
+
+.header_active {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}

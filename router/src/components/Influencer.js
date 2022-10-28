@@ -4,7 +4,7 @@ import './css/Influencer.css'
 
 function Influencer(props) {
     return (
-        <div>
+        <div className='_body'>
             <NavLink to='/content/influencer/bts' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='bts'></NavLink>
             <NavLink to='/content/influencer/son' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='son'></NavLink>
             <NavLink to='/content/influencer/blackpink' className={({ isActive }) => isActive ? 'active' : 'inactive'} id='blackpink'></NavLink>

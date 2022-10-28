@@ -7,10 +7,12 @@ import Header from './components/Header';
 import Influencer from './components/Influencer';
 import Main from './components/Main';
 import Nav from './components/Nav';
+import './App.css'
 
 function App(props) {
   return (
     <BrowserRouter>
+    <body className='App_body'>
       <Header></Header>
       <Nav></Nav>
       <Routes>
@@ -19,6 +21,8 @@ function App(props) {
         <Route path='/content/food/:foods' element={<Food_Article></Food_Article>}></Route>
         <Route path='/content/influencer' element={<Influencer></Influencer>}></Route>
       </Routes>
+    </body>
+      
     </BrowserRouter>
   );
 }
