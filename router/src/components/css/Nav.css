@@ -11,7 +11,8 @@
     align-items: center;
     width: 150px;
     height: 30px;
-    border: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
     color: black;
     text-decoration: none;
     text-align: center;
@@ -23,8 +24,18 @@
     align-items: center;
     width: 150px;
     height: 30px;
-    border: 1px black solid;
-    color: black;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    color: white;
     text-decoration: none;
     text-align: center;
+    background-color: gray;
+}
+
+#Food {
+    border-left: none;
+}
+
+#Tour {
+    border-right: none;
 }

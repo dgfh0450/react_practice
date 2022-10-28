@@ -2,17 +2,20 @@
     background-image: url('../image/bulgogi.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 #bibimbap {
     background-image: url('../image/bibimbap.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 }
 
 #kimchi {
     background-image: url('../image/kimchi.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 }
 
@@ -20,4 +23,6 @@
     background-image: url('../image/pork.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
+

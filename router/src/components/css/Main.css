@@ -1,15 +1,19 @@
 .Main_body {
     display: flex;
-    width: 100%;
-    border: 1px red solid;
     flex-flow: wrap;
-    justify-content: space-between;
+}
+.Main_Nav_body {
+    display: flex;
+    width: 100%;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
 
 #K-FOOD {
     background-image: url('../image/k-food.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #K-INFLUENCER {
@@ -17,7 +21,23 @@
     background-image: url('../image/influencer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
+#K-CONTENTS {
+    background-image: url('../image/k-contents.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#K-TOUR {
+    background-image: url('../image/k-tour.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 ._body {
     display: flex;
@@ -28,11 +48,10 @@
 
 .inactive {
     display: block;
-    width: 280px;
-    height: 280px;
-    float: left;
+    width: 250px;
+    height: 250px;
     border: 1px black solid;
-    margin: 10px;
+    margin: 20px;
 }
 
 .main_inactive {
@@ -44,7 +63,8 @@
 
 #korea {
     border: 1px black solid;
-    width: 600px;
-    margin : 0 100px;
-    margin-bottom: 10px;
+    width: 400px;
+    margin : 0 auto;
+    margin-bottom: 30px;
+
 }

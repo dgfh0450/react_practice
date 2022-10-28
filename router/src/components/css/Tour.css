@@ -1,27 +1,28 @@
-#son {
-    background-image: url('../image/son.jpg');
+#jeju {
+    background-image: url('../image/jeju.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#bts {
-    background-image: url('../image/bts.jpg');
+#busan {
+    background-image: url('../image/busan.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#seoul {
+    background-image: url('../image/seoul.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#dokdo {
+    background-image: url('../image/dokdo.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#blackpink {
-    background-image: url('../image/blackpink.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#faker {
-    background-image: url('../image/faker.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}

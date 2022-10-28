@@ -1,26 +1,23 @@
-#son {
-    background-image: url('../image/son.jpg');
+#squidgame {
+    background-image: url('../image/squidgame.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-#bts {
-    background-image: url('../image/bts.jpg');
+#lostark {
+    background-image: url('../image/lostark.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-#blackpink {
-    background-image: url('../image/blackpink.jpg');
+#parasite {
+    background-image: url('../image/parasite.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-#faker {
-    background-image: url('../image/faker.jpg');
+#kpop {
+    background-image: url('../image/kpop.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
