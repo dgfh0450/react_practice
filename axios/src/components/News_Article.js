@@ -44,7 +44,7 @@ export default function News_Article(props) {
                 setData(response_h.data);
             }
             else if(props.Article_mode=="custom"){
-                const response_c = await axios.get('https://newsapi.org/v2/everything?q=league-of-legends&apiKey=b2df109b12fe455b85be2923d2b04db8');
+                const response_c = await axios.get('https://newsapi.org/v2/everything?q=리그-오브-레전드&apiKey=b2df109b12fe455b85be2923d2b04db8');
                 setData(response_c.data);
             }
         }
