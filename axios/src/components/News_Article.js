@@ -28,18 +28,25 @@ const StyledImg = styled.img`
     transform:translate(-50%, 0);
 `
 
-export default function News_Article() {
+export default function News_Article(props) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     
     const fetchData = async () => {
-        try { 
+        try {
             setData(null);
             setError(null);
             setLoading(true);
-            const response = await axios.get('https://newsapi.org/v2/top-headlines?country=kr&apiKey=b2df109b12fe455b85be2923d2b04db8');
-            setData(response.data);
+            console.log(props.Article_mode);
+            if(props.Article_mode=="headline"){
+                const response_h = await axios.get('https://newsapi.org/v2/top-headlines?country=kr&apiKey=b2df109b12fe455b85be2923d2b04db8');
+                setData(response_h.data);
+            }
+            else if(props.Article_mode=="custom"){
+                const response_c = await axios.get('https://newsapi.org/v2/everything?q=league-of-legends&apiKey=b2df109b12fe455b85be2923d2b04db8');
+                setData(response_c.data);
+            }
         }
         catch(e) {
             setError(e);
