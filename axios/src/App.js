@@ -11,11 +11,13 @@ export default function App() {
   const [date_to, setDate_to] = useState(Current_date.getFullYear()+'-'+(Current_date.getMonth()+1)+'-'+Current_date.getDate());
   const [date_from, setDate_from] = useState(null);
   const [page, setPage] = useState(1);
+  const StyledNav = styled.nav`
+    text-align : center;
+  `
   const StyledDiv =  styled.div`
     margin : 0px;
     padding : 10px;
     border : 1px black solid;
-    text-align : center;
   `
   let form, date=null;
   if(mode=="custom") {
@@ -41,6 +43,8 @@ export default function App() {
       date_to={date_to} q={q} date_from={date_from}
       page={page}
       ></News_Article>
+      <StyledNav>
+
       <button onClick={()=>{
         setPage(page-1);
       }}>{'<'}</button>
@@ -48,6 +52,7 @@ export default function App() {
       <button onClick={()=>{
         setPage(page+1);
       }}>{'>'}</button>
+      </StyledNav>
     </StyledDiv>
   )
 }
