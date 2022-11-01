@@ -13,12 +13,10 @@ export default function Nav(props) {
     <StyledDiv>
         <a href='#' onClick={(event)=>{
             event.preventDefault();
-            console.log('headline clicked');
             props.changeMode("headline");
         }}>headline</a>
         <a href='#' onClick={(event)=>{
             event.preventDefault();
-            console.log('custom clicked');
             props.changeMode("custom");
         }}>custom</a>
     </StyledDiv>
