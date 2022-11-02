@@ -1,23 +1,33 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import style from 'styled-components'
+import { NavLink } from 'react-router-dom'
 import Form from './Form'
+import styled from 'styled-components'
 
-const StyledDiv = style.div`
+const StyledDiv = styled.div`
     margin : 0px;
     margin-bottom : 10px;
-    border : 1px black solid;
 `
 
 export default function Nav(props) {
   return (
     <StyledDiv>
-      <Link to='/headline' onClick={()=>{
+      <NavLink to='/headline' style={({ isActive }) => ({
+              width : '120px',
+              textDecoration:'none',
+              paddingRight:'10px',
+              borderRight:'1px black solid',
+              color:'black'
+            })} onClick={()=>{
         props.onChangeMode("headline");
-      }}>headline</Link>
-      <Link to='/custom' onClick={()=>{
+      }} >HEADLINE</NavLink>
+      <NavLink to='/custom' style={({ isActive }) => ({
+              width : '120px',
+              textDecoration:'none',
+              paddingLeft:'10px',
+              color:'black'
+            })}  onClick={()=>{
         props.onChangeMode("custom");
-      }}>custom</Link>
+      }}>CUSTOM</NavLink>
     </StyledDiv>
   )
 }

@@ -8,9 +8,13 @@ import News_Article_headline from './components/News_Article_headline';
 import News_Article_custom from './components/News_Article_custom';
 
 export default function App() {
+
+  const t_max = new Date().toISOString().split("T")[0];
   const [page, setPage] = useState(1);
   const [mode, setMode] = useState("headline");
   const [q, setQ] = useState(null);
+  const [date_from, setDate_from] = useState(null);
+  const [date_to, setDate_to] = useState(t_max);
   const [sort, setSort] = useState("relevancy");
   const StyledNav = styled.nav`
     text-align : center;
@@ -37,7 +41,7 @@ export default function App() {
   console.log(sort);
   let form = null;
   if(mode == "custom") {
-    form = <Form onChangeQ={(_q)=>{setQ(_q)}} onChangeSort={(_sort)=>{setSort(_sort)}}></Form>
+    form = <Form onChangeQ={(_q)=>{setQ(_q)}} onChangeDate_from={(_from)=>{setDate_from(_from)}} onChangeDate_to={(_to)=>{setDate_to(_to)}} onChangeSort={(_sort)=>{setSort(_sort)}}></Form>
   }
   else form = null;
   return (
@@ -48,7 +52,7 @@ export default function App() {
       <br></br>
       <Routes>
         <Route path='/headline' element={<News_Article_headline page={page}></News_Article_headline>}></Route>
-        <Route path='/custom' element={<News_Article_custom page={page} q={q} sort={sort}></News_Article_custom>}></Route>
+        <Route path='/custom' element={<News_Article_custom page={page} q={q} sort={sort} date_from={date_from} date_to={date_to}></News_Article_custom>}></Route>
       </Routes>
 
       <StyledNav>
