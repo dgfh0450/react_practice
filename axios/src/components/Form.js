@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const StyledDiv = styled.div `
+display:flex;
+justify-content:space-between;`
 
 export default function Form(props) {
   return (
-    <>
-      <form onSubmit={(event)=>{
+    <StyledDiv>
+      <form style={{float:'left'}} onSubmit={(event)=>{
         event.preventDefault();
         props.onChangeQ(event.target.keyword.value);
         }}>
@@ -12,9 +17,11 @@ export default function Form(props) {
         <input name="date_to" type="date" id="to"></input>
         <button type="submit">불러오기</button>
       </form>
-      <button onClick={()=>{props.onChangeSort("publishedAt")}}>최신순</button>
-      <button onClick={()=>{props.onChangeSort("popularity")}}>인기순</button>
-      <button onClick={()=>{props.onChangeSort("relevancy")}}>연관순</button>
-    </>
+      <nav>
+      <button style={{float:'right'}} onClick={()=>{props.onChangeSort("publishedAt")}}>최신순</button>
+      <button style={{float:'right'}} onClick={()=>{props.onChangeSort("popularity")}}>인기순</button>
+      <button style={{float:'right'}} onClick={()=>{props.onChangeSort("relevancy")}}>연관순</button>
+      </nav>
+    </StyledDiv>
   )
 }

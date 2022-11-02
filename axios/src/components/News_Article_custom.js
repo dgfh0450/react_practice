@@ -2,32 +2,33 @@ import React, {Component, useEffect, useState} from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import Form from './Form'
+const ImgContainer = styled.div`
+    width : 20%;
+    display : flex; 
+    justify-content : center;
+    margin-right : 10%;
+    border-right : 1px black solid;
+`
 
 const StyledDiv = styled.div`
-    width : 400px;
-    height : 400px;
-    margin : 10px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    margin : 15px;
     box-shadow : 5px 5px 5px rgba(0,0,0,0.6);
     border:1px black solid;
-    position : relative;
 `
 const StyledUl = styled.ul`
     position : relative;
     display : flex;
     flex-flow : wrap;
-    border:1px red solid;
     margin : 0px;
     padding : 30px;
-    justify-content : center;
-    font-size : 25px;
+    font-size : 20px;
+    line-height : 100%;
 `
 const StyledImg = styled.img`
-    border:1px black solid;
-    height:50%;
-    position : absolute;
-    left:50%;
-    bottom:0%;
-    transform:translate(-50%, 0);
+    height : 100px;
 `
 
 export default function News_Article_custom(props) {
@@ -64,15 +65,27 @@ export default function News_Article_custom(props) {
 
             lis.push(
                 <StyledDiv>
-                    <a href={data.articles[i].url} target={'_blank'} style={{color:'black', textDecoration:'none'}}><b>{data.articles[i].title}</b></a>
-                    <StyledImg src={data.articles[i].urlToImage}></StyledImg>
+                    <ImgContainer>
+                        <StyledImg src={data.articles[i].urlToImage}></StyledImg>
+                    </ImgContainer>
+                    <a href={data.articles[i].url} target={"_blank"} style={{color:'black', textDecoration:'none'}}><b>{data.articles[i].title}</b></a>
                 </StyledDiv>
             );
     }
-    let date = <p style={{position : 'absolute', top:'0%', left:'0%', border:'1px black solid', fontSize:'12px', margin : '0px'}}>{Current_date.getFullYear()}-{Current_date.getMonth()+1}-{Current_date.getDate()}</p>
+    let year = Current_date.getFullYear();
+    let _month = Current_date.getMonth()+1;
+    let month = null;
+    let date = null;
+    if(Current_date.getDate()<10)
+        date = '0'+Current_date.getDate();
+    else date = Current_date.getDate();
+    if(_month<10)
+        month = '0'+_month;
+    else month = _month;
+
     return (
         <StyledUl>
-            {date}
+            <p style={{margin:'0px', position:'absolute', top:'0%', left:'50%', transform:'translateX(-50%)'}}>{year}-{month}-{date}</p>
             {lis}
         </StyledUl>
     )

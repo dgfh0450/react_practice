@@ -14,12 +14,26 @@ export default function App() {
   const [sort, setSort] = useState("relevancy");
   const StyledNav = styled.nav`
     text-align : center;
+    font-size : 20px;
+    display : flex; 
+    align-items : center;
+    justify-content : center;
   `
   const StyledDiv =  styled.div`
     margin : 0px;
     padding : 10px;
     border : 1px black solid;
   `
+
+  const StyledBtn = styled.button`
+    height : 25px;
+    width : 25px;
+    border:1px black solid;
+    cursor : pointer;
+    background-color : #fff;
+    font-size:15px;
+    `
+
   console.log(sort);
   let form = null;
   if(mode == "custom") {
@@ -31,15 +45,16 @@ export default function App() {
       
       <Nav onChangeMode={(mode)=>{setMode(mode); setPage(1);}}></Nav>
       {form}
+      <br></br>
       <Routes>
         <Route path='/headline' element={<News_Article_headline page={page}></News_Article_headline>}></Route>
         <Route path='/custom' element={<News_Article_custom page={page} q={q} sort={sort}></News_Article_custom>}></Route>
       </Routes>
 
       <StyledNav>
-        <button onClick={()=>{setPage(page-1);}}>{'<'}</button>
-        <span> {page} </span>
-        <button onClick={()=>{setPage(page+1);}}>{'>'}</button>
+        <StyledBtn onClick={()=>{setPage(page-1);}}>{'<'}</StyledBtn>
+        <span style={{height : '25px',width:'25px' , margin : '0 5px', lineHeight : '100%'}}>{page}</span>
+        <StyledBtn onClick={()=>{setPage(page+1);}}>{'>'}</StyledBtn>
       </StyledNav>
     </StyledDiv>
   )
