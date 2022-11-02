@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
-import News_Article from './components/News_Article'
+import News_Article from './components/News_Article_headline'
 import styled from 'styled-components'
 import Nav from './components/Nav'
 import Form from './components/Form';
+import { Route, Routes } from 'react-router-dom';
+import News_Article_headline from './components/News_Article_headline';
+import News_Article_custom from './components/News_Article_custom';
 
 export default function App() {
-  var Current_date = new Date();
+  const [page, setPage] = useState(1);
   const [mode, setMode] = useState("headline");
   const [q, setQ] = useState(null);
-  const [date_to, setDate_to] = useState(Current_date.getFullYear()+'-'+(Current_date.getMonth()+1)+'-'+Current_date.getDate());
-  const [date_from, setDate_from] = useState(null);
-  const [page, setPage] = useState(1);
+  const [sort, setSort] = useState("relevancy");
   const StyledNav = styled.nav`
     text-align : center;
   `
@@ -19,39 +20,26 @@ export default function App() {
     padding : 10px;
     border : 1px black solid;
   `
-  let form, date=null;
-  if(mode=="custom") {
-    form = <Form onChangeQ={(_q)=>{
-      setQ(_q);
-    }}
-    onChangeDate={(_date_from, _date_to)=>{
-      setDate_to(_date_to);
-      setDate_from(_date_from);
-    }}
-    ></Form>
+  console.log(sort);
+  let form = null;
+  if(mode == "custom") {
+    form = <Form onChangeQ={(_q)=>{setQ(_q)}} onChangeSort={(_sort)=>{setSort(_sort)}}></Form>
   }
-  else if(mode=="headline") {
-    form = null;
-  }
+  else form = null;
   return (
     <StyledDiv>
-      <Nav changeMode={(mode)=>{
-        setMode(mode);
-      }}></Nav>
+      
+      <Nav onChangeMode={(mode)=>{setMode(mode); setPage(1);}}></Nav>
       {form}
-      <News_Article Article_mode={mode}
-      date_to={date_to} q={q} date_from={date_from}
-      page={page}
-      ></News_Article>
-      <StyledNav>
+      <Routes>
+        <Route path='/headline' element={<News_Article_headline page={page}></News_Article_headline>}></Route>
+        <Route path='/custom' element={<News_Article_custom page={page} q={q} sort={sort}></News_Article_custom>}></Route>
+      </Routes>
 
-      <button onClick={()=>{
-        setPage(page-1);
-      }}>{'<'}</button>
-      <span> {page} </span>
-      <button onClick={()=>{
-        setPage(page+1);
-      }}>{'>'}</button>
+      <StyledNav>
+        <button onClick={()=>{setPage(page-1);}}>{'<'}</button>
+        <span> {page} </span>
+        <button onClick={()=>{setPage(page+1);}}>{'>'}</button>
       </StyledNav>
     </StyledDiv>
   )

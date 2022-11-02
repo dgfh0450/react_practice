@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import style from 'styled-components'
 import Form from './Form'
 
@@ -11,14 +12,12 @@ const StyledDiv = style.div`
 export default function Nav(props) {
   return (
     <StyledDiv>
-        <a href='#' onClick={(event)=>{
-            event.preventDefault();
-            props.changeMode("headline");
-        }}>headline</a>
-        <a href='#' onClick={(event)=>{
-            event.preventDefault();
-            props.changeMode("custom");
-        }}>custom</a>
+      <Link to='/headline' onClick={()=>{
+        props.onChangeMode("headline");
+      }}>headline</Link>
+      <Link to='/custom' onClick={()=>{
+        props.onChangeMode("custom");
+      }}>custom</Link>
     </StyledDiv>
   )
 }
