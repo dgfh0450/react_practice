@@ -74,7 +74,7 @@ export default function News_Article_custom(props) {
     }
     return (
         <StyledUl>
-            <p style={{margin:'0px', position:'absolute', top:'0%', left:'50%', transform:'translateX(-50%)'}}>{props.date_from} ~ {props.date_to}</p>
+            <p style={{margin:'0px', position:'absolute', top:'0%', left:'50%', transform:'translateX(-50%)'}}> {props.q} / {props.date_from} ~ {props.date_to}</p>
             {lis}
         </StyledUl>
     )

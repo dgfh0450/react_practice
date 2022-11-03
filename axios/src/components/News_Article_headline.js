@@ -33,7 +33,6 @@ const StyledImg = styled.img`
 
 export default function News_Article_headline(props) {
 
-    let Current_date = new Date();
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -72,19 +71,11 @@ export default function News_Article_headline(props) {
                 </StyledDiv>
             );
     }
-    let year = Current_date.getFullYear();
-    let _month = Current_date.getMonth()+1;
-    let month = null;
-    let date = null;
-    if(Current_date.getDate()<10)
-        date = '0'+Current_date.getDate();
-    else date = Current_date.getDate();
-    if(_month<10)
-        month = '0'+_month;
-    else month = _month;
+    
+    const Current_date = new Date().toISOString().split("T")[0];
     return (
         <StyledUl>
-            <p style={{margin:'0px', position:'absolute', top:'0%', left:'50%', transform:'translateX(-50%)'}}>{year}-{month}-{date}</p>
+            <p style={{margin:'0px', position:'absolute', top:'0%', left:'50%', transform:'translateX(-50%)'}}>{Current_date}</p>
             {lis}</StyledUl>
     )
 }

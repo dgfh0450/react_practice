@@ -26,7 +26,6 @@ export default function App() {
   const StyledDiv =  styled.div`
     margin : 0px;
     padding : 10px;
-    border : 1px black solid;
   `
 
   const StyledBtn = styled.button`
