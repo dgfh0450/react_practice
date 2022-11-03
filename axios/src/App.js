@@ -50,6 +50,7 @@ export default function App() {
       {form}
       <br></br>
       <Routes>
+        <Route path='/' element={<News_Article_headline page={page}></News_Article_headline>}></Route>
         <Route path='/headline' element={<News_Article_headline page={page}></News_Article_headline>}></Route>
         <Route path='/custom' element={<News_Article_custom page={page} q={q} sort={sort} date_from={date_from} date_to={date_to}></News_Article_custom>}></Route>
       </Routes>
