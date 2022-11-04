@@ -48,7 +48,7 @@ export default function App() {
 
       <StyledNav>
         <Button variant='outlined' size='small' onClick={()=>{setPage(page-1);}}>{'<'}</Button>
-        <span style={{height : '25px',width:'25px' , margin : '0 5px', lineHeight : '100%'}}>{page}</span>
+        <span style={{height : '25px',width:'25px' , margin : '0 5px', lineHeight : '100%'}}> {page} </span>
         <Button variant='outlined' size='small' onClick={()=>{setPage(page+1);}}>{'>'}</Button>
       </StyledNav>
     </StyledDiv>

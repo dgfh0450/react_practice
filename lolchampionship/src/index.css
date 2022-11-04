@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "RIXGOB";
+  src: url('./fonts/RIXGOB.TTF');
+}
+
+@font-face {
+  font-family: "RIX";
+  src: url('./fonts/rix모던고딕b.ttf');
+}
+
+@font-face {
+  font-family: "RIXGOL";
+  src: url('./fonts/RIXGOL.TTF');
+}
