@@ -37,7 +37,7 @@ export default function Teams() {
         {
             let img = null;
             for(let j=0; j<arr[i][1].length; j++) {
-                img = process.env.PUBLIC_URL+'/images/'+arr[i][1][j][1]+'.jpg';
+                img = process.env.PUBLIC_URL+'/images/lane'+arr[i][1][j][1]+'.jpg';
 
                 lis.push(<li style={{ fontFamily:'RIXGOL', display:'flex', alignItems:'center'}}><img style={{width:'30px', height:'30px'}} src={img}></img> - {arr[i][1][j][0]}</li>)
             }
