@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import News_Article from './components/News_Article_headline'
+import Button from '@mui/material/Button';
 import styled from 'styled-components'
 import Nav from './components/Nav'
 import Form from './components/Form';
@@ -28,15 +28,6 @@ export default function App() {
     padding : 10px;
   `
 
-  const StyledBtn = styled.button`
-    height : 25px;
-    width : 25px;
-    border:1px black solid;
-    cursor : pointer;
-    background-color : #fff;
-    font-size:15px;
-    `
-
   console.log(sort);
   let form = null;
   if(mode == "custom") {
@@ -56,9 +47,9 @@ export default function App() {
       </Routes>
 
       <StyledNav>
-        <StyledBtn onClick={()=>{setPage(page-1);}}>{'<'}</StyledBtn>
+        <Button variant='outlined' size='small' onClick={()=>{setPage(page-1);}}>{'<'}</Button>
         <span style={{height : '25px',width:'25px' , margin : '0 5px', lineHeight : '100%'}}>{page}</span>
-        <StyledBtn onClick={()=>{setPage(page+1);}}>{'>'}</StyledBtn>
+        <Button variant='outlined' size='small' onClick={()=>{setPage(page+1);}}>{'>'}</Button>
       </StyledNav>
     </StyledDiv>
   )
