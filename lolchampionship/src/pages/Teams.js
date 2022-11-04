@@ -31,19 +31,19 @@ export default function Teams() {
 
     }
     let lis = [];
+    
     const arr = Object.entries(teamData);
     for(let i=0; i<arr.length; i++) {
         if(teamName.teams==arr[i][0])
         {
-            let img = null;
+            const src_teams = process.env.PUBLIC_URL+'/images/teams/'+arr[i][0]+'.jpg';
             for(let j=0; j<arr[i][1].length; j++) {
-                img = process.env.PUBLIC_URL+'/images/lane'+arr[i][1][j][1]+'.jpg';
-
-                lis.push(<li style={{ fontFamily:'RIXGOL', display:'flex', alignItems:'center'}}><img style={{width:'30px', height:'30px'}} src={img}></img> - {arr[i][1][j][0]}</li>)
+                const src_lane = process.env.PUBLIC_URL+'/images/lane/'+arr[i][1][j][1]+'.jpg';
+                lis.push(<li style={{ fontFamily:'RIXGOL', display:'flex', alignItems:'center'}}><img style={{width:'30px', height:'30px'}} src={src_lane}></img> - {arr[i][1][j][0]}</li>)
             }
             return(
                 <div>
-                    <h1 style={{fontFamily:'RIXGOB'}}>{arr[i][0]}</h1>
+                    <img src={src_teams} style={{width:'150px'}}></img>
                     <ul>{lis}</ul>
                 </div>
             )

@@ -27,7 +27,7 @@ export default function Participants() {
       ["LCO","CHF"],
       ["TCL", "IW"],
       ["LLA","ISG"],
-      ["CBLOL", "lll"],
+      ["CBLOL", "LLL"],
     
     ];
     let content=[];
