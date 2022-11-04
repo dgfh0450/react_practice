@@ -18,6 +18,7 @@ export default function Participants_Article({league}) {
 
   return (
     <StyledDiv>
+        <img src={'./images/'+0+'.jpg'}></img>
         <h1 style={{fontFamily:'RIXGOB'}}>{league[0]}</h1>
         <ol>{lis}</ol>
     </StyledDiv>
