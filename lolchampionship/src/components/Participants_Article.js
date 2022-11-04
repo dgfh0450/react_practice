@@ -13,7 +13,8 @@ const StyledDiv= styled.div`
 
 export default function Participants_Article({league}) {
     let lis = [];
-    let src = process.env.PUBLIC_URL+'/images/leagues'+league[0]+'.jpg';
+    const src = process.env.PUBLIC_URL+'/images/leagues/'+league[0]+'.jpg'
+    console.log(league[0]);
   for(let i=1; i<league.length; i++) {
     lis.push(<li style={{float:'left', marginRight:'30px', fontFamily:'RIXGOL'}}><Link style={{color:'black', textDecoration:'none'}} to={'/championship/'+ league[i] }>{league[i]}</Link></li>)
   }
