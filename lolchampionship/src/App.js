@@ -7,8 +7,8 @@ import Teams from './pages/Teams'
 
 export default function App() {
   return (
-    <div style={{backgroundColor:'white'}}>
-      <div style={{width:'60%', border:'1px black solid', margin:'0 auto'}}>
+    <div style={{backgroundColor:'#0f1519'}}>
+      <div style={{width:'60%', border:'1px rgba(255,255,255,0.3) solid', margin:'0 auto'}}>
         <Nav></Nav>
         <Routes>
           <Route path='/*' element={<Main></Main>}></Route>

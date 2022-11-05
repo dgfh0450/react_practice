@@ -6,16 +6,16 @@ const StyledLink = styled(NavLink)`
     padding:10px 0px;
     margin : 0px 10px;
     opacity:0.6;
-    color:black;
+    color:white;
     font-family:'RIXGOL';
     text-decoration: none;
     &:hover {
-        border-bottom:3px black solid;
+        border-bottom:3px rgba(255,255,255,1) solid;
         font-weight:bold;
         opacity:1;
     }
     &.active { 
-      border-bottom:3px black solid;
+      border-bottom:3px rgba(255,255,255,1) solid;
       font-weight:bold;
       opacity:1;
     }
@@ -24,22 +24,18 @@ const HomeLink = styled(NavLink)`
   padding:10px 0px;
   margin : 0px 10px;
   opacity:0.6;
-  color:black;
-  font-family:'RIXGOL';
-  text-decoration: none;
   &:hover {
-    border-bottom:3px black solid;
-    font-weight:bold;
     opacity:1;
-}
+
 ` 
+const src = process.env.PUBLIC_URL+'/images/lolesports.png'
 
 export default function Nav() {
   return (
-    <div style={{marginBottom:'10px', padding:'10px'}}>
-        <HomeLink to='/'>home</HomeLink>
-        <StyledLink to='/pvp'>pvp</StyledLink>
-        <StyledLink to='/championship'>world</StyledLink>
+    <div style={{padding:'20px', backgroundColor:'#111111'}}>
+        <HomeLink to='/'><img style={{width:'30px', height:'30px', transform:'translateY(30%)'}} src={src}></img></HomeLink>
+        <StyledLink to='/pvp'>전적 검색</StyledLink>
+        <StyledLink to='/championship'>월즈</StyledLink>
     </div>
   )
 }

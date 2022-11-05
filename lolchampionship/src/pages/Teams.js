@@ -39,12 +39,12 @@ export default function Teams() {
             const src_teams = process.env.PUBLIC_URL+'/images/teams/'+arr[i][0]+'.jpg';
             for(let j=0; j<arr[i][1].length; j++) {
                 const src_lane = process.env.PUBLIC_URL+'/images/lane/'+arr[i][1][j][1]+'.jpg';
-                lis.push(<li style={{ fontFamily:'RIXGOL', display:'flex', alignItems:'center'}}><img style={{width:'30px', height:'30px'}} src={src_lane}></img> - {arr[i][1][j][0]}</li>)
+                lis.push(<li style={{ fontFamily:'RIXGOL', display:'flex', alignItems:'center', marginBottom:'10px'}}><img style={{width:'30px', height:'30px', marginRight:'10px'}} src={src_lane}></img> {arr[i][1][j][0]}</li>)
             }
             return(
-                <div>
-                    <img src={src_teams} style={{width:'150px'}}></img>
-                    <ul>{lis}</ul>
+                <div style={{display:'flex', padding:'20px'}}>
+                    <div style={{display:'flex', justifyContent:'center', alignItems:'center',width:'50%', borderRight:'1px black solid'}}><img src={src_teams} style={{height:'200px'}}></img></div>
+                    <div style={{width:'50%', display:'flex', alignItems:'center'}}><ol>{lis}</ol></div>
                 </div>
             )
         }
