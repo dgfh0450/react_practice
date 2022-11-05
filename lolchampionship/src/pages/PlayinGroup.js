@@ -1,9 +1,10 @@
 import React from 'react'
-import Participant from '../data'
+import data from '../data.json'
 
+console.log(data.leagues[0].name);
 
 export default function PlayinGroup() {
   return (
-    <div style={{border:'1px white solid'}}>{Participant.leagues[0].name}</div>
+    <div style={{border:'1px white solid'}}></div>
   )
 }
