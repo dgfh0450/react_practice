@@ -1,70 +1,70 @@
 {
     "leagues":[
-        { "name":"lck",
+        { "name":"LCK",
             "teams":[
-                {"name":"gen",
+                {"name":"GEN",
                  "member":[["Doran", "top"], ["Peanut", "jug"], ["Chovy", "mid"], ["Ruler", "adc"], ["Lehends", "spt"]],
                  "goal":"semi_final"
                 },
-                {"name":"t1",
+                {"name":"T1",
                     "member":[["Zeus", "top"],[ "Oner", "jug"], ["Faker", "mid"],[ "Gumayusi", "adc"],[ "Keria", "spt"]],
                     "goal":"final"
                    },
-                {"name":"dk",
+                {"name":"DK",
                     "member":[["Nuguri", "top"], [ "Canyon", "jug"], ["Showmaker", "mid"], ["Deokdam", "adc"],[ "Kellin", "spt"]],
                     "goal":"quater_final"
                    },
-                {"name":"drx",
+                {"name":"DRX",
                     "member":[["Kingen", "top"],["Juhan", "jug"],["Zeka", "mid"],[ "Deft", "adc"], ["Beryl", "spt"]],
-                    "goal":"final"
+                    "goal":"winner"
                    }
             ]
         },
-        { "name":"lpl",
+        { "name":"LPL",
             "teams":[
-                {"name":"jdg",
+                {"name":"JDG",
                  "member":[["369", "top"],  ["Kanavi", "jug"], ["Yagao", "mid"],["Hope", "adc"], ["Missing", "spt"]],
                  "goal":"semi_final"
                 },
-                {"name":"tes",
+                {"name":"TES",
                     "member":[["WayWard", "top"],  ["Tian", "jug"], ["Knight", "mid"], ["Jackeylove", "adc"], ["Mark", "spt"]],
                     "goal":"group"
                    },
-                {"name":"edg",
+                {"name":"EDG",
                     "member":[["Flandre", "top"], ["Jiejie", "jug"], ["Scout", "mid"], ["Viper", "adc"], ["Meiko", "spt"]],
                     "goal":"semi_final"
                    },
-                {"name":"rng",
+                {"name":"RNG",
                     "member":[["Breathe", "top"], ["Wei", "jug"], ["Xiaohu", "mid"], ["Gala", "adc"], ["Ming", "spt"]],
                     "goal":"semi_final"
                    }
             ]
         },
         {
-            "name":"lec",
+            "name":"LEC",
             "teams":[
-                {"name":"rge",
+                {"name":"RGE",
                  "member":[["Odoamne", "top"], ["Malrang", "jug"], ["Larssen", "mid"], ["Comp", "adc"], ["Trymbi", "spt"]],
                  "goal":""
                 },
-                {"name":"g2",
+                {"name":"G2",
                  "member":[["Brokenblade", "top"], ["Jankos", "jug"], ["CaPs", "mid"], ["Flakked", "adc"], ["Targamas", "spt"]],
                  "goal":""
                 },
-                {"name":"fnc",
+                {"name":"FNC",
                  "member":[["Wunder", "top"], ["Razork", "jug"], ["Humanoid", "mid"], ["Upset", "adc"] , ["Hylissang", "spt"]],
                  "goal":""
                 },
-                {"name":"mad",
+                {"name":"MAD",
                  "member":[["Armut", "top"], ["Elyoya", "jug"], ["Nisqy", "mid"], ["UNFORGIVEN", "adc"], ["Kaiser", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"lcs",
+            "name":"LCS",
             "teams":[
-                {"name":"c9",
+                {"name":"C9",
                  "member":[["Fudge", "top"], ["Blaber", "jug"], ["Jensen", "mid"], ["Berserker", "adc"], ["Zven", "spt"]],
                  "goal":""
                 },
@@ -72,78 +72,78 @@
                  "member":[["Ssumday", "top"], ["Closer", "jug"], ["Abbedagge", "mid"], ["FBI", "adc"], ["Huhi", "spt"]],
                  "goal":""
                 },
-                {"name":"eg",
+                {"name":"EG",
                  "member":[["Impact", "top"], ["Inspired", "jug"], ["Jojopyun", "mid"], ["Danny", "adc"], ["Kaori", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"pcs",
+            "name":"PCS",
             "teams":[
-                {"name":"cfo",
+                {"name":"CFO",
                  "member":[["Rest", "top"], ["Gemini", "jug"], ["Mission", "mid"], ["Atlen", "adc"], ["Koala", "spt"]],
                  "goal":""
                 },
-                {"name":"byg",
+                {"name":"BYG",
                  "member":[["Liang", "top"],  ["HuSha", "jug"], ["Minji", "mid"], ["Wako", "adc"] , ["Kino", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"vcs",
+            "name":"VCS",
             "teams":[
-                {"name":"gam",
+                {"name":"GAM",
                  "member":[["Kiaya", "top"], ["Levi", "jug"], ["Kati", "mid"], ["Sty1e", "adc"] ,["Bie", "spt"]],
                  "goal":""
                 },
-                {"name":"sgb",
+                {"name":"SGB",
                  "member":[["Hasmed", "top"], ["BeanJ", "jug"], ["Froggy", "mid"], ["Shogun", "adc"], ["Taki", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"ljl",
+            "name":"LJL",
             "teams":[
-                {"name":"dfm",
+                {"name":"DFM",
                  "member":[["Evi", "top"], ["Steal", "jug"] , ["Yaharong", "mid"], ["Yutapon" , "adc"], ["Harp", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"lco",
+            "name":"LCO",
             "teams":[
-                {"name":"chf",
+                {"name":"CHF",
                  "member":[["Topoon", "top"],["Arthur", "jug"], ["Tally", "mid"], ["Raes", "adc"] , ["Aladoric", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"tcl",
+            "name":"TCL",
             "teams":[
-                {"name":"iw",
+                {"name":"IW",
                  "member":[["StarScreen", "top"], ["Ferret", "jug"], ["Serin", "mid"], ["HolyPhoenix", "adc"],["Farfetch", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"lla",
+            "name":"LLA",
             "teams":[
-                {"name":"isg",
+                {"name":"ISG",
                  "member":[["ADD", "top"], ["Grell", "jug"], ["Seiya", "mid"], ["Gavotto", "adc"], ["Jelly", "spt"]],
                  "goal":""
                 }
             ]
         },
         {
-            "name":"cblol",
+            "name":"CBLOL",
             "teams":[
-                {"name":"lll",
+                {"name":"LLL",
                  "member":[["Robo", "top"], ["Croc", "jug"], ["Tinowns", "mid"], ["Brance", "adc"], ["Ceos", "spt"]],
                  "goal":""
                 }
