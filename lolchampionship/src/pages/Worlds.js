@@ -13,14 +13,14 @@ export default function Worlds() {
     }
     const style = {
         width:'100%',
-        border:'1px rgba(255,255,255,0.2) solid',
+        border:'1px rgba(255,255,255,0.3) solid',
         boxSizing:'border-box',
-        borderRadius : '8px',
-        margin : '10px auto',
+        marginBottom : '10px',
         padding:'20px',
         display : 'flex',
         flexFlow : 'column no wrap',
-        justifyContent : 'space-around'
+        justifyContent : 'space-around',
+        boxSizing:'border-box',
     }
   return (
     <div>

@@ -15,7 +15,7 @@ export default function App() {
           <Route path='/championship' element={<Worlds></Worlds>}></Route>
           <Route path='/championship/:teams' element={<Teams></Teams>}></Route>
         </Routes>
-      </div>
+      </div>z
     </div>
 
   )

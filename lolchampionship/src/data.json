@@ -120,7 +120,8 @@
                 {"name":["SGB", "SAIGON BUFFALO ESPORTS"],
                  "member":[["Hasmed", "top"], ["BeanJ", "jug"], ["Froggy", "mid"], ["Shogun", "adc"], ["Taki", "spt"]],
                  "goal":"playin",
-                 "playin":["B","2승-3패", "4"]
+                 "playin":["B","2승-3패", "4"],
+                 "playin_knockout_1":"1"
                 }
             ]
         },

@@ -28,6 +28,11 @@ code {
 }
 
 @font-face {
-  font-family: "Colfax";
+  font-family: "ColfaxL";
   src: url('./fonts/Colfax-Light.otf');
+}
+
+@font-face {
+  font-family: "ColfaxB";
+  src: url('./fonts/Colfax-Bold.otf');
 }

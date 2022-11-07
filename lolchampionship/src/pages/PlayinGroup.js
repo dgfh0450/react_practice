@@ -26,7 +26,7 @@ export default function PlayinGroup({style}) {
   }
   return (
     <>
-      <h1 style={{width:'100%', textAlign:'center', fontFamily:'RIXGOL', color:'white'}}>플레이-인 그룹 스테이지</h1>
+      <h1 style={{width:'100%', textAlign:'center', fontFamily:'RIXGOL', color:'white',}}>플레이-인 그룹 스테이지</h1>
       <div style={style}>
         <div style={{width:'50%', margin:'30px'}}>{contentA}</div>
         <div style={{width:'50%', margin:'30px'}}>{contentB}</div>
