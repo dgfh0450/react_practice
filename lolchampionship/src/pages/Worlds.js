@@ -29,16 +29,12 @@ export default function Worlds() {
                     <Tab style={{color:'white'}} label="참가팀" value="1" />
                     <Tab style={{color:'white'}} label="플레이-인 스테이지" value="2" />
                     <Tab style={{color:'white'}} label="그룹 스테이지" value="3" />
-                    <Tab style={{color:'white'}} label="8강" value="4" />
-                    <Tab style={{color:'white'}} label="준결승" value="5" />
-                    <Tab style={{color:'white'}} label="결승" value="6" />
+                    <Tab style={{color:'white'}} label="녹 아웃 토너먼트" value="4" />
                 </TabList>
             <TabPanel value="1">{<Participants></Participants>}</TabPanel>
             <TabPanel value="2">{<><PlayinGroup style={style}></PlayinGroup><PlayinKnockout style={style}></PlayinKnockout></>}</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
-            <TabPanel value="4">Item Three</TabPanel>
-            <TabPanel value="5">Item Three</TabPanel>
-            <TabPanel value="6">Item Three</TabPanel>
+            <TabPanel value="3">그룹</TabPanel>
+            <TabPanel value="4">녹아웃</TabPanel>
             </TabContext>
     </div>
 )};

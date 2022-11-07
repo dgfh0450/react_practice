@@ -6,20 +6,29 @@
             "teams":[
                 {"name":["GEN", "Gen.G"],
                  "member":[["Doran", "top"], ["Peanut", "jug"], ["Chovy", "mid"], ["Ruler", "adc"], ["Lehends", "spt"]],
-                 "goal":"semi_final"
+                 "goal":"semi_final",
+                 "group":["D", "1", "6승-1패"],
+                 "knockout_8":["C", "3"]
                 },
                 {"name":["T1", "T1"],
                     "member":[["Zeus", "top"],[ "Oner", "jug"], ["Faker", "mid"],[ "Gumayusi", "adc"],[ "Keria", "spt"]],
-                    "goal":"final"
+                    "goal":"final",
+                    "group":["A", "1", "5승-1패"],
+                    "knockout_8":["B", "3"]
                    },
                 {"name":["DK", "DWG KIA"],
                     "member":[["Nuguri", "top"], [ "Canyon", "jug"], ["Showmaker", "mid"], ["Deokdam", "adc"],[ "Kellin", "spt"]],
-                    "goal":"quater_final"
+                    "goal":"quater_final",
+                    "group":["B", "2", "5승-2패"],
+                    "knockout_8":["C", "2"]
+                    
                    },
                 {"name":["DRX", "DRX"],
                     "member":[["Kingen", "top"],["Juhan", "jug"],["Zeka", "mid"],[ "Deft", "adc"], ["Beryl", "spt"]],
                     "goal":"final",
-                    "playin":["B","5승-0패", "1"]
+                    "playin":["B", "1","5승-0패"],
+                    "group":["C", "1", "5승-2패"],
+                    "knockout_8":["D", "3"]
                     
                    }
             ]
@@ -30,21 +39,28 @@
             "teams":[
                 {"name":["JDG", "JDG Intel Esports Club"],
                  "member":[["369", "top"],  ["Kanavi", "jug"], ["Yagao", "mid"],["Hope", "adc"], ["Missing", "spt"]],
-                 "goal":"semi_final"
+                 "goal":"semi_final",
+                 "group":["B", "1", "6승-1패"],
+                 "knockout_8":["A","3"]
                 },
                 {"name":["TES", "Top Esports"],
                     "member":[["WayWard", "top"],  ["Tian", "jug"], ["Knight", "mid"], ["Jackeylove", "adc"], ["Mark", "spt"]],
-                    "goal":"group"
+                    "goal":"group",
+                    "group":["C", "3", "3승-3패"]
                    },
                 {"name":["EDG", "Edward Gaming Hycan"],
                     "member":[["Flandre", "top"], ["Jiejie", "jug"], ["Scout", "mid"], ["Viper", "adc"], ["Meiko", "spt"]],
-                    "goal":"semi_final"
+                    "goal":"semi_final",
+                    "group":["A", "2", "4승-2패"],
+                    "knockout_8":["D", "2"]
                    },
                 {"name":["RNG", "Royal Never Give up"],
                     "member":[["Breathe", "top"], ["Wei", "jug"], ["Xiaohu", "mid"], ["Gala", "adc"], ["Ming", "spt"]],
-                    "goal":"semi_final",
-                    "playin":["B","4승-1패", "2"],
-                    "playin_knockout_2":"3"
+                    "goal":"quater_final",
+                    "playin":["B", "2","4승-1패"],
+                    "playin_knockout_2":"3",
+                    "group":["D", "2", "5승-2패"],
+                    "knockout_8":["B", "0"]
                    }
             ]
         },
@@ -54,21 +70,25 @@
             "teams":[
                 {"name":["RGE", "Rogue"],
                  "member":[["Odoamne", "top"], ["Malrang", "jug"], ["Larssen", "mid"], ["Comp", "adc"], ["Trymbi", "spt"]],
-                 "goal":""
+                 "goal":"quater_final",
+                 "group":["C", "2", "4승-3패"],
+                 "knockout_8":["A", "0"]
                 },
                 {"name":["G2", "G2 Esports"],
                  "member":[["Brokenblade", "top"], ["Jankos", "jug"], ["CaPs", "mid"], ["Flakked", "adc"], ["Targamas", "spt"]],
-                 "goal":""
+                 "goal":"group",
+                 "group":["B", "4", "1승-5패"]
                 },
                 {"name":["FNC", "Fnatic"],
                  "member":[["Wunder", "top"], ["Razork", "jug"], ["Humanoid", "mid"], ["Upset", "adc"] , ["Hylissang", "spt"]],
-                 "goal":"",
-                 "playin":["A","4승-1패", "1"]
+                 "goal":"group",
+                 "playin":["A", "1","4승-1패"],
+                 "group":["A", "3", "2승-4패"]
                 },
                 {"name":["MAD", "Mad Lions"],
                  "member":[["Armut", "top"], ["Elyoya", "jug"], ["Nisqy", "mid"], ["UNFORGIVEN", "adc"], ["Kaiser", "spt"]],
                  "goal":"playin",
-                 "playin":["B","3승-2패", "3"],
+                 "playin":["B", "3","3승-2패"],
                  "playin_knockout_1":"3",
                  "playin_knockout_2":"0"
                 }
@@ -80,17 +100,20 @@
             "teams":[
                 {"name":["C9", "Cloud9"],
                  "member":[["Fudge", "top"], ["Blaber", "jug"], ["Jensen", "mid"], ["Berserker", "adc"], ["Zven", "spt"]],
-                 "goal":""
+                 "goal":"group",
+                 "group":["A", "4", "1승-5패"]
                 },
                 {"name":["100", "100 Thieves"],
                  "member":[["Ssumday", "top"], ["Closer", "jug"], ["Abbedagge", "mid"], ["FBI", "adc"], ["Huhi", "spt"]],
-                 "goal":""
+                 "goal":"group",
+                 "group":["D", "4", "1승-5패"]
                 },
                 {"name":["EG", "Evil Geniuses"],
                  "member":[["Impact", "top"], ["Inspired", "jug"], ["Jojopyun", "mid"], ["Danny", "adc"], ["Kaori", "spt"]],
-                 "goal":"",
-                 "playin":["A","5승-2패", "2"],
-                 "playin_knockout_2":"3"
+                 "goal":"group",
+                 "playin":["A", "2", "5승-2패"],
+                 "playin_knockout_2":"3",
+                 "group":["B", "3", "1승-5패"]
                 }
             ]
         },
@@ -100,12 +123,13 @@
             "teams":[
                 {"name":["CFO", "CTBC Flying Oyster"],
                  "member":[["Rest", "top"], ["Gemini", "jug"], ["Mission", "mid"], ["Atlen", "adc"], ["Koala", "spt"]],
-                 "goal":"group"
+                 "goal":"group",
+                 "group":["D", "3", "1승-5패"]
                 },
                 {"name":["BYG", "Mega Bank Beyond Gaming"],
                  "member":[["Liang", "top"],  ["HuSha", "jug"], ["Minji", "mid"], ["Wako", "adc"] , ["Kino", "spt"]],
                  "goal":"playin",
-                 "playin":["A","2승-3패", "5"]
+                 "playin":["A", "5","2승-3패"]
                 }
             ]
         },
@@ -115,12 +139,13 @@
             "teams":[
                 {"name":["GAM", "GAM Esports"],
                  "member":[["Kiaya", "top"], ["Levi", "jug"], ["Kati", "mid"], ["Sty1e", "adc"] ,["Bie", "spt"]],
-                 "goal":"group"
+                 "goal":"group",
+                 "group":["C", "4", "1승-5패"]
                 },
                 {"name":["SGB", "SAIGON BUFFALO ESPORTS"],
                  "member":[["Hasmed", "top"], ["BeanJ", "jug"], ["Froggy", "mid"], ["Shogun", "adc"], ["Taki", "spt"]],
                  "goal":"playin",
-                 "playin":["B","2승-3패", "4"],
+                 "playin":["B", "4","2승-3패"],
                  "playin_knockout_1":"1"
                 }
             ]
@@ -132,7 +157,7 @@
                 {"name":["DFM", "DetonatioN FocusMe"],
                  "member":[["Evi", "top"], ["Steal", "jug"] , ["Yaharong", "mid"], ["Yutapon" , "adc"], ["Harp", "spt"]],
                  "goal":"playin",
-                 "playin":["A","3승-3패", "4"],
+                 "playin":["A","4","3승-3패"],
                  "playin_knockout_1":"3",
                  "playin_knockout_2":"1"
                 }
@@ -145,7 +170,7 @@
                 {"name":["CHF", "The Chiefs"],
                  "member":[["Topoon", "top"],["Arthur", "jug"], ["Tally", "mid"], ["Raes", "adc"] , ["Aladoric", "spt"]],
                  "goal":"playin",
-                 "playin":["A","0승-5패", "6"]
+                 "playin":["A", "6","0승-5패"]
                 }
             ]
         },
@@ -156,7 +181,7 @@
                 {"name":["IW", "DenizBank Istanbul Wildcats"],
                  "member":[["StarScreen", "top"], ["Ferret", "jug"], ["Serin", "mid"], ["HolyPhoenix", "adc"],["Farfetch", "spt"]],
                  "goal":"playin",
-                 "playin":["B","0승-5패", "6"]
+                 "playin":["B", "6","0승-5패"]
                 }
             ]
         },
@@ -167,7 +192,7 @@
                 {"name":["ISG", "Isurus"],
                  "member":[["ADD", "top"], ["Grell", "jug"], ["Seiya", "mid"], ["Gavotto", "adc"], ["Jelly", "spt"]],
                  "goal":"playin",
-                 "playin":["B","1승-4패", "5"]
+                 "playin":["B", "5","1승-4패"]
                 }
             ]
         },
@@ -178,7 +203,7 @@
                 {"name":["LLL", "LOUD"],
                  "member":[["Robo", "top"], ["Croc", "jug"], ["Tinowns", "mid"], ["Brance", "adc"], ["Ceos", "spt"]],
                  "goal":"playin",
-                 "playin":["A","3승-3패", "3"],
+                 "playin":["A", "3","3승-3패"],
                  "playin_knockout_1":"1"
                 }
             ]

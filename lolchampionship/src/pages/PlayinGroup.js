@@ -12,11 +12,11 @@ export default function PlayinGroup({style}) {
     for(let i=0; i<data.leagues.length; i++) {
       for(let j=0; j<data.leagues[i].teams.length; j++) {
         if(data.leagues[i].teams[j].playin) {
-          if(data.leagues[i].teams[j].playin[2]==a_rank && data.leagues[i].teams[j].playin[0]=="A") {
+          if(data.leagues[i].teams[j].playin[1]==a_rank && data.leagues[i].teams[j].playin[0]=="A") {
             contentA.push(<PlayinGroup_Article teams={data.leagues[i].teams[j]}></PlayinGroup_Article>);
             a_rank++;
           }
-          else if(data.leagues[i].teams[j].playin[2]==b_rank && data.leagues[i].teams[j].playin[0]=="B") {
+          else if(data.leagues[i].teams[j].playin[1]==b_rank && data.leagues[i].teams[j].playin[0]=="B") {
             contentB.push(<PlayinGroup_Article teams={data.leagues[i].teams[j]}></PlayinGroup_Article>);
             b_rank++;
           }
