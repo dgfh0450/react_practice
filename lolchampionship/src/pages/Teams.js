@@ -8,8 +8,8 @@ export default function Teams() {
     let lis = [];
     for (let i=0; i<data.leagues.length; i++) {
         for (let j=0; j<data.leagues[i].teams.length; j++) {
-            if(teamName.teams==data.leagues[i].teams[j].name) {
-                const src_teams = process.env.PUBLIC_URL+'/images/teams/'+data.leagues[i].teams[j].name+'.jpg';
+            if(teamName.teams==data.leagues[i].teams[j].name[0]) {
+                const src_teams = process.env.PUBLIC_URL+'/images/teams/'+data.leagues[i].teams[j].name[0]+'.jpg';
                 for(let k=0; k<data.leagues[i].teams[j].member.length; k++)
                 {
                     const src_lane = process.env.PUBLIC_URL+'/images/lane/'+data.leagues[i].teams[j].member[k][1]+'.jpg';

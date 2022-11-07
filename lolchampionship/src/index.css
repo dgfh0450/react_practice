@@ -26,3 +26,8 @@ code {
   font-family: "RIXGOL";
   src: url('./fonts/RIXGOL.TTF');
 }
+
+@font-face {
+  font-family: "Colfax";
+  src: url('./fonts/Colfax-Light.otf');
+}
