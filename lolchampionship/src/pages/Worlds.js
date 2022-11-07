@@ -4,6 +4,7 @@ import {TabPanel, TabContext, TabList} from '@mui/lab'
 import Participants from './Participants';
 import PlayinGroup from './PlayinGroup';
 import PlayinKnockout from './PlayinKnockout';
+import Group from './Group';
 
 
 export default function Worlds() {
@@ -33,7 +34,7 @@ export default function Worlds() {
                 </TabList>
             <TabPanel value="1">{<Participants></Participants>}</TabPanel>
             <TabPanel value="2">{<><PlayinGroup style={style}></PlayinGroup><PlayinKnockout style={style}></PlayinKnockout></>}</TabPanel>
-            <TabPanel value="3">그룹</TabPanel>
+            <TabPanel value="3">{<Group style={style}></Group>}</TabPanel>
             <TabPanel value="4">녹아웃</TabPanel>
             </TabContext>
     </div>
