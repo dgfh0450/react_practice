@@ -35,12 +35,12 @@ export default function PlayinKnockout({style}) {
     <>
     <h1 style={{width:'100%', textAlign:'center', fontFamily:'RIXGOL', color:'white'}}>플레이-인 토너먼트 스테이지</h1>
     <div style={style}>
-      <div style={{width:'50%', margin:'30px'}}>
+      <div style={{width:'30%', margin:'30px'}}>
         <p style={{color:'white', fontFamily:'RIXGOB'}}>1라운드</p> 
         <div style={{marginBottom:'30px'}}>{content1A}</div>
         <div style={{marginBottom:'30px'}}>{content1B}</div>
       </div>
-      <div style={{width:'50%', margin:'30px'}}>
+      <div style={{width:'30%', margin:'30px'}}>
         <p style={{color:'white', fontFamily:'RIXGOB'}}>2라운드</p>
         <div style={{marginBottom:'30px'}}>{content2A}</div>
         <div style={{marginBottom:'30px'}}>{content2B}</div>

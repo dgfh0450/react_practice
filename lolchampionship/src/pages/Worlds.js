@@ -5,6 +5,7 @@ import Participants from './Participants';
 import PlayinGroup from './PlayinGroup';
 import PlayinKnockout from './PlayinKnockout';
 import Group from './Group';
+import Knockout from './Knockout';
 
 
 export default function Worlds() {
@@ -16,7 +17,7 @@ export default function Worlds() {
         width:'100%',
         border:'1px rgba(255,255,255,0.3) solid',
         boxSizing:'border-box',
-        marginBottom : '10px',
+        margin:'10px',
         padding:'20px',
         display : 'flex',
         flexFlow : 'column no wrap',
@@ -35,7 +36,7 @@ export default function Worlds() {
             <TabPanel value="1">{<Participants></Participants>}</TabPanel>
             <TabPanel value="2">{<><PlayinGroup style={style}></PlayinGroup><PlayinKnockout style={style}></PlayinKnockout></>}</TabPanel>
             <TabPanel value="3">{<Group style={style}></Group>}</TabPanel>
-            <TabPanel value="4">녹아웃</TabPanel>
+            <TabPanel value="4">{<Knockout style={style}></Knockout>}</TabPanel>
             </TabContext>
     </div>
 )};
