@@ -1,6 +1,7 @@
 import React, {useState, useEffect }from 'react'
 import axios from 'axios'
 import MatchData from './MatchData';
+import MatchData_Detail from './MatchData_Detail';
 
 export default function Match(props) {
     const [data, setData] = useState(null);
@@ -24,7 +25,7 @@ export default function Match(props) {
   }, [])
   let content = [];
   for(let i in data) {
-    content.push(<MatchData id={data[i]}></MatchData>)
+    content.push(<MatchData id={data[i]} puuid={props.puuid}></MatchData>)
   }
   if(loading) return <div>loading...</div>
   if(error) return <div>error... match</div>

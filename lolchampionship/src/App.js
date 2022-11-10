@@ -11,7 +11,6 @@ import Summoner from './pages/Summoner'
 
 export default function App() {
   const [sum, setSum] = useState(null);
-  console.log(sum);
   return (
     <>
     <GlobalStyle></GlobalStyle>
