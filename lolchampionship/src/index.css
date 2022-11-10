@@ -25,6 +25,7 @@ code {
 @font-face {
   font-family: "RIXGOL";
   src: url('./fonts/RIXGOL.TTF');
+  unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
