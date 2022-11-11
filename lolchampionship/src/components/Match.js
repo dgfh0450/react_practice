@@ -30,7 +30,7 @@ export default function Match(props) {
   if(loading) return <div>loading...</div>
   if(error) return <div>error... match</div>
   return (
-    <div style={{color:'white'}}>
+    <div style={{ display:'flex', justifyContent:'flex-end', flexFlow:'row wrap'}}>
         {content}
     </div>
   )

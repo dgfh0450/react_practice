@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
     line-height:100%;
+    margin:0;
   }
 
 `;
