@@ -94,7 +94,7 @@ export default function MatchData_Detail(props) {
             if(i==props.index) color=color_dark;
             if (data.info.teams[0].win) {
                 team100.push(<div style={{ width: '100%', height: '50px', display: 'flex', alignItems: 'center', backgroundColor: color}}>
-                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{marginLeft:'10px',width: '20%', height: '20px', lineHeight: '20px', color: 'black', textDecoration: 'none', border:'1px black solid',textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap'}}>{data.info.participants[i].summonerName}</Link>
+                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{marginLeft:'10px',width: '20%', height: '20px', lineHeight: '20px', color: 'black', textDecoration: 'none', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap'}}>{data.info.participants[i].summonerName}</Link>
                     <div style={{ width: '40px', height: '40px', position: 'relative' }}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '15px', height: '15px', borderRadius: '50%', position: 'absolute', left: '0%', bottom: '0%', color: 'white', fontSize: '8px', backgroundColor: 'black' }}>{data.info.participants[i].champLevel}</div>
                         <img src={src_champ} style={{ width: '40px', borderRadius: '50%' }}></img>
@@ -122,8 +122,9 @@ export default function MatchData_Detail(props) {
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item5}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item6}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                     </div>
-                    <div>
-                        <p>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                    <div style={{width:'25%', textAlign:'center'}}>
+                        <p style={{fontSize:'12px'}}>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                        <p style={{fontSize:'12px'}}>와드 {data.info.participants[i].wardsPlaced}/{data.info.participants[i].wardsKilled}</p>
                     </div>
                 </div>)
             }
@@ -157,8 +158,9 @@ export default function MatchData_Detail(props) {
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item5}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item6}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                     </div>
-                    <div>
-                        <p>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                    <div style={{width:'25%', textAlign:'center'}}>
+                        <p style={{fontSize:'12px'}}>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                        <p style={{fontSize:'12px'}}>와드 {data.info.participants[i].wardsPlaced}/{data.info.participants[i].wardsKilled}</p>
                     </div>
                 </div>)
             }
@@ -194,8 +196,9 @@ export default function MatchData_Detail(props) {
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item5}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item6}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                     </div>
-                    <div>
-                        <p>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                    <div style={{width:'25%', textAlign:'center'}}>
+                        <p style={{fontSize:'12px'}}>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                        <p style={{fontSize:'12px'}}>와드 {data.info.participants[i].wardsPlaced}/{data.info.participants[i].wardsKilled}</p>
                     </div>
                 </div>)
             }
@@ -229,8 +232,9 @@ export default function MatchData_Detail(props) {
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item5}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                         <div style={{ width: '25px', height: '25px', marginRight: '1px', borderRadius: '8px', backgroundColor: color_dark, backgroundImage: `url(${src_item6}), url('')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
                     </div>
-                    <div>
-                        <p>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                    <div style={{width:'25%', textAlign:'center'}}>
+                        <p style={{fontSize:'12px'}}>CS {data.info.participants[i].totalMinionsKilled + data.info.participants[i].neutralMinionsKilled}</p>
+                        <p style={{fontSize:'12px'}}>와드 {data.info.participants[i].wardsPlaced}/{data.info.participants[i].wardsKilled}</p>
                     </div>
                 </div>)
             }

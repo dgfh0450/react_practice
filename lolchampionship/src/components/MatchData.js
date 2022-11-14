@@ -6,17 +6,16 @@ import Rune from '../data/ko_KR/runesReforged.json';
 import SummonerSpell from '../data/ko_KR/summoner.json'
 import MatchData_Detail from './MatchData_Detail';
 
-const StyledDiv = styled.div`
-    width:100%;
-    border:1px rgba(255,255,255,0.3) solid;
-    padding:10px;
-`
-
 export default function MatchData(props) {
-    const [mode, setMode] = useState("briefly");
+    const [detail, setDetail] = useState(false);
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+
+    const changeView = () => {
+        setDetail(!detail);
+    }
+
     const fetchData = async () => {
         try {
             setData(null);
@@ -113,10 +112,7 @@ export default function MatchData(props) {
     const killPer = Math.floor(data.info.participants[index].challenges?.killParticipation * 100);
     let team100 = [];
     let team200 = [];
-    let detail = null;
     let fontWeight = null;
-    if (mode == "detail") detail = [<MatchData_Detail id={props.id} index={index}></MatchData_Detail>]
-    else if (mode == "briefly") detail = [];
     for (let i = 0; i < data.info.participants.length; i++) {
         const src_champ = process.env.PUBLIC_URL + '/images/champion/' + data.info.participants[i].championName + '.png';
 
@@ -140,7 +136,7 @@ export default function MatchData(props) {
         }
     }
     return (
-        <div style={{ display: 'flex', flexFlow: 'column wrap', width: '60%' }}>
+        <div style={{ display: 'flex', flexFlow: 'column wrap', width: '100%' }}>
             <div style={style}>
                 <div style={{ width: '1%', backgroundColor: color_deepdark, borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}></div>
                 <div name="game_info" style={{ width: '15%', display: 'flex', flexFlow: 'row wrap', alignItems: 'space-around', height: '100%' }}>
@@ -171,7 +167,7 @@ export default function MatchData(props) {
                         <div style={{ width: '30px', height: '30px', backgroundImage: `url(${src_item6})`, borderRadius: '8px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', marginRight: '1px', backgroundColor: color_dark }}></div>
                     </div>
                 </div>
-                <div name="score" style={{ width: '15%', display:'flex', flexFlow:'column wrap', alignItems:'center', justifyContent:'space-around' }}>
+                <div name="score" style={{ width: '15%', display: 'flex', flexFlow: 'column wrap', alignItems: 'center', justifyContent: 'space-around' }}>
                     <p style={{ fontSize: '16px' }}>{data.info.participants[index].kills} / {data.info.participants[index].deaths} / {data.info.participants[index].assists}</p>
                     <p style={{ fontSize: '12px' }}>{(data.info.participants[index].challenges?.kda)?.toFixed(2)} : 1</p>
                     <p style={{ fontSize: '12px' }}>킬관여 {killPer}%</p>
@@ -184,13 +180,11 @@ export default function MatchData(props) {
                 <div name="detail" style={{ width: '4%', cursor: 'pointer', backgroundColor: color_dark, borderTopRightRadius: '10px', borderBottomRightRadius: '10px' }}
                     onMouseEnter={(event) => { event.target.style.backgroundColor = color_deepdark }}
                     onMouseLeave={(event) => { event.target.style.backgroundColor = color_dark }}
-                    onClick={() => {
-                        if (mode == "detail") setMode("briefly");
-                        else if (mode == "briefly") setMode("detail");
-                    }}
+                    onClick={changeView}
                 ></div>
             </div>
-            {detail}
+
+            {detail?<MatchData_Detail id={props.id} index={index}></MatchData_Detail>:null}
         </div>
     )
 

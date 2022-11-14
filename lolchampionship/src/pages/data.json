@@ -1,0 +1,276 @@
+{
+    "gameId": 6217434643,
+    "mapId": 12,
+    "gameMode": "ARAM",
+    "gameType": "MATCHED_GAME",
+    "gameQueueConfigId": 450,
+    "participants": [
+        {
+            "teamId": 100,
+            "spell1Id": 4,
+            "spell2Id": 32,
+            "championId": 58,
+            "profileIconId": 29,
+            "summonerName": "버섯 진짜 시러",
+            "bot": false,
+            "summonerId": "64b74TiZeYNm1uzHaagCfkaRRUhE3p1gixaimbpfxysaFgU",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8010,
+                    9111,
+                    9105,
+                    8299,
+                    8135,
+                    8139,
+                    5008,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8000,
+                "perkSubStyle": 8100
+            }
+        },
+        {
+            "teamId": 100,
+            "spell1Id": 6,
+            "spell2Id": 4,
+            "championId": 43,
+            "profileIconId": 5528,
+            "summonerName": "뭔가잘못된아지르",
+            "bot": false,
+            "summonerId": "5pb-W3kVVW1pcgH6TmwJOygzEBNdASVd47Qn-y8_w3F0JQ",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8126,
+                    8138,
+                    8135,
+                    8009,
+                    8014,
+                    5007,
+                    5008,
+                    5001
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 100,
+            "spell1Id": 6,
+            "spell2Id": 4,
+            "championId": 21,
+            "profileIconId": 4691,
+            "summonerName": "목동대물남",
+            "bot": false,
+            "summonerId": "NsjACpehxr1jm07d0kruJcEeYxLV6YPPpmovM24Pm7WRfdE",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8126,
+                    8138,
+                    8106,
+                    8009,
+                    8014,
+                    5008,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 100,
+            "spell1Id": 3,
+            "spell2Id": 4,
+            "championId": 104,
+            "profileIconId": 4986,
+            "summonerName": "떡잎마을방위대장",
+            "bot": false,
+            "summonerId": "Pt-TeunHgfLvU4GPyiZaPgMJdnxLchj5mRUUhxeigqaA-g",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8143,
+                    8138,
+                    8106,
+                    8009,
+                    9104,
+                    5005,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 100,
+            "spell1Id": 4,
+            "spell2Id": 6,
+            "championId": 42,
+            "profileIconId": 4777,
+            "summonerName": "박sexy로이",
+            "bot": false,
+            "summonerId": "-fK681OpcCosu3UAJuqgu7wF5JefYsIP6ME_BKdye3ooNA",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8139,
+                    8138,
+                    8135,
+                    8009,
+                    8014,
+                    5005,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 200,
+            "spell1Id": 4,
+            "spell2Id": 6,
+            "championId": 13,
+            "profileIconId": 4073,
+            "summonerName": "응애 나 아가용주",
+            "bot": false,
+            "summonerId": "TlJnfB2e51gAT_kJW7z_Y4rqEhF4wdCIA6_DoaUXeMigQ0Q",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8230,
+                    8226,
+                    8210,
+                    8236,
+                    8135,
+                    8139,
+                    5008,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8200,
+                "perkSubStyle": 8100
+            }
+        },
+        {
+            "teamId": 200,
+            "spell1Id": 32,
+            "spell2Id": 4,
+            "championId": 26,
+            "profileIconId": 5371,
+            "summonerName": "중국인이니다",
+            "bot": false,
+            "summonerId": "G_vNvTQioGZdRQLV0WD-TI8SeUGz1PPjdhovpzqTiMSuzw",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8126,
+                    8138,
+                    8106,
+                    8009,
+                    8014,
+                    5008,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 200,
+            "spell1Id": 3,
+            "spell2Id": 4,
+            "championId": 235,
+            "profileIconId": 3539,
+            "summonerName": "젊고건강한설이",
+            "bot": false,
+            "summonerId": "UNlNLvCJnTD5z5M3mPGrvF7qwGkxMsSQtPvziN7N3X2CqoQ",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8126,
+                    8138,
+                    8106,
+                    9104,
+                    8009,
+                    5005,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        },
+        {
+            "teamId": 200,
+            "spell1Id": 32,
+            "spell2Id": 4,
+            "championId": 15,
+            "profileIconId": 4861,
+            "summonerName": "하스타투스",
+            "bot": false,
+            "summonerId": "xFi_-nA1fD3tunBKHHoXqqOtPJDAFaNagJRQKuXGfdEXGg",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8008,
+                    8009,
+                    9103,
+                    8014,
+                    8135,
+                    8139,
+                    5005,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8000,
+                "perkSubStyle": 8100
+            }
+        },
+        {
+            "teamId": 200,
+            "spell1Id": 32,
+            "spell2Id": 4,
+            "championId": 35,
+            "profileIconId": 4574,
+            "summonerName": "앙하세요",
+            "bot": false,
+            "summonerId": "-5KrNvk-GM91SHsNaddSnO0PKRO-vrfPyk2v2k-ERwRXtUw",
+            "gameCustomizationObjects": [],
+            "perks": {
+                "perkIds": [
+                    8128,
+                    8143,
+                    8138,
+                    8106,
+                    8009,
+                    8014,
+                    5008,
+                    5008,
+                    5002
+                ],
+                "perkStyle": 8100,
+                "perkSubStyle": 8000
+            }
+        }
+    ],
+    "observers": {
+        "encryptionKey": "4CweUP8Q2wUna+gwYeppGwYQOMZc9w6g"
+    },
+    "platformId": "KR",
+    "bannedChampions": [],
+    "gameStartTime": 1668443538270,
+    "gameLength": -125
+}
