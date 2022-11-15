@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Rune from '../data/ko_KR/runesReforged.json';
 import SummonerSpell from '../data/ko_KR/summoner.json'
 import MatchData_Detail from './MatchData_Detail';
+import gameMode from '../data/ko_KR/gameMode.json'
 
 export default function MatchData(props) {
     const [detail, setDetail] = useState(false);
@@ -103,12 +104,13 @@ export default function MatchData(props) {
     style.backgroundColor = color;
     const minute = Math.floor(data.info.gameDuration / 60);
     const second = data.info.gameDuration % 60;
-    let gameMode = null;
-    if (data.info.queueId == "430") gameMode = "일반"
-    else if (data.info.queueId == "429") gameMode = "솔로 랭크"
-    else if (data.info.queueId == "440") gameMode = "자유 5:5 랭크"
-    else if (data.info.queueId == "450") gameMode = "무작위 총력전"
-    else if (data.info.queueId == "1900") gameMode = "U.R.F"
+    let queueType = null;
+    for(const queue of gameMode) {
+        if(data.info.queueId==queue.queueId) {
+            queueType = queue.toKR;
+        }
+    }
+
     const killPer = Math.floor(data.info.participants[index].challenges?.killParticipation * 100);
     let team100 = [];
     let team200 = [];
@@ -122,7 +124,7 @@ export default function MatchData(props) {
             team100.push(
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <img src={src_champ} style={{ width: '20px', height: '20px', marginRight: '5px' }}></img>
-                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{ fontWeight: fontWeight, width: '80%', fontSize: '12px', textDecoration: 'none', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{data.info.participants[i].summonerName}</Link>
+                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{ fontWeight: fontWeight, width: '70%', fontSize: '12px', textDecoration: 'none', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{data.info.participants[i].summonerName}</Link>
                 </div>
             )
         }
@@ -130,7 +132,7 @@ export default function MatchData(props) {
             team200.push(
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <img src={src_champ} style={{ width: '20px', height: '20px', marginRight: '5px' }}></img>
-                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{ fontWeight: fontWeight, width: '80%', fontSize: '12px', textDecoration: 'none', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{data.info.participants[i].summonerName}</Link>
+                    <Link target="_blank" to={'/pvp/' + data.info.participants[i].summonerName} style={{ fontWeight: fontWeight, width: '70%', fontSize: '12px', textDecoration: 'none', color: 'black', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{data.info.participants[i].summonerName}</Link>
                 </div>
             )
         }
@@ -140,7 +142,7 @@ export default function MatchData(props) {
             <div style={style}>
                 <div style={{ width: '1%', backgroundColor: color_deepdark, borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}></div>
                 <div name="game_info" style={{ width: '15%', display: 'flex', flexFlow: 'row wrap', alignItems: 'space-around', height: '100%' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', margin: '0', width: '100%', justifyContent: 'center', fontSize: '16px' }}>{gameMode}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', margin: '0', width: '100%', justifyContent: 'center', fontSize: '16px' }}>{queueType}</div>
                     <div style={{ display: 'flex', alignItems: 'center', margin: '0', width: '100%', justifyContent: 'center', fontSize: '12px' }}>{minute}분{second}초</div>
                 </div>
                 <div name="user_info" style={{ width: '30%', display: 'flex', flexFlow: 'column wrap' }}>

@@ -1,14 +1,16 @@
 import React from 'react'
+import gameMode from '../data/ko_KR/gameMode.json'
 
 export default function Rank(props) {
     let queueType = null;
-    const rank_type = [
-        ["SOLO", "솔로랭크"],
-        ["FLEX", "자유랭크"]
-    ]
-    for (const type of rank_type) {
-        if (props.data.queueType.includes(type[0])) {
-            queueType = type[1];
+    if (!props.data) return (
+        <div style={{ alignItems: 'center' }}>
+            <div style={{ backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', fontSize: '20px', padding: '10px' }}>UNRANKED</div>
+        </div>
+    )
+    for (const queue of gameMode) {
+        if (props.data.queueType.includes(queue.notes)) {
+            queueType = queue.toKR;
         }
     }
     let prMatch = null;
@@ -16,11 +18,9 @@ export default function Rank(props) {
         prMatch = <p>{props.data.miniSeries.progress}</p>
     }
     const winRate = Math.floor(props.data.wins / (props.data.wins + props.data.losses) * 100);
-    console.log(winRate);
     const src_amblem = process.env.PUBLIC_URL + '/images/ranked_emblems/Emblem_' + props.data.tier + '.png';
     return (
         <div style={{ alignItems: 'center' }}>
-            <div style={{ backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', fontSize: '20px', padding: '10px' }}>{queueType}</div>
             <div style={{ display: 'flex', backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', padding: '10px' }}>
                 <img src={src_amblem} style={{ height: '150px', marginRight: '5px' }}></img>
                 <div style={{ width: '70%', display: 'flex', flexFlow: 'column wrap', justifyContent: 'space-around' }}>

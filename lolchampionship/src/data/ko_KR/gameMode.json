@@ -1,0 +1,37 @@
+[
+    {
+        "queueId": 420,
+        "map": "Summoner's Rift",
+        "description": "5v5 Ranked Solo games",
+        "toKR": "솔로 랭크",
+        "notes":"SOLO"
+
+    },
+    {
+        "queueId": 430,
+        "map": "Summoner's Rift",
+        "description": "5v5 Blind Pick games",
+        "toKR": "일반",
+        "notes":"NORM"
+    },
+    {
+        "queueId": 440,
+        "map": "Summoner's Rift",
+        "description": "5v5 Ranked Flex games",
+        "toKR": "자유 랭크",
+        "notes":"FLEX"
+    },
+    {
+        "queueId": 450,
+        "map": "Howling Abyss",
+        "description": "5v5 ARAM games",
+        "toKR": "무작위 총력전",
+        "notes":"ARAM"
+    },
+    {
+        "queueId": 1900,
+        "map": "Summoner's Rift",
+        "description": "Pick URF games",
+        "toKR": "U.R.F"
+    }
+]
