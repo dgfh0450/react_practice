@@ -15,8 +15,23 @@ export default function Match(props) {
             const response = await axios.get('https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/'+props.puuid+'/ids?start=0&count=20&api_key=RGAPI-2cffc6cb-251a-446c-b803-e21414a70b1c');
             setData(response.data);
         }
-        catch(e) {
-            setError(e);
+        catch(error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
         }
         setLoading(false);
     }

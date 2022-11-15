@@ -10,10 +10,9 @@ export default function Summoner() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [playing, setPlaying] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [puuid, setPuuid] = useState(null);
+  const [isPlaying, setisPlaying] = useState(false);
   const { name } = useParams();
+  const [inGame, setinGame] = useState(null);
   const fetchData = async () => {
     try {
       setData(null);
@@ -22,7 +21,7 @@ export default function Summoner() {
       const response = await axios.get('https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/' + name + '?api_key=RGAPI-2cffc6cb-251a-446c-b803-e21414a70b1c');
       setData(response.data);
     }
-    catch(error) {
+    catch (error) {
       if (error.response) {
         // The request was made and the server responded with a status code
         // that falls out of the range of 2xx
@@ -42,29 +41,40 @@ export default function Summoner() {
     }
     setLoading(false);
   }
-
+  const inGameData = async () => {
+    try {
+      setinGame(null);
+      const response = await axios.get('https://kr.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/' + data.id + '?api_key=RGAPI-2cffc6cb-251a-446c-b803-e21414a70b1c');
+      setinGame(response.data);
+      setisPlaying(true);
+    }
+    catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+        // http.ClientRequest in node.js
+        console.log(error.request);
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.log('Error', error.message);
+      }
+      console.log(error.config);
+    }
+    if (inGame) { console.log(inGame); console.log(isPlaying); }
+    else console.log('not gaming');
+  }
   useEffect(() => {
     fetchData();
   }, [])
-
-  const inGameData = async () => {
-    let response = null;
-    try{
-      setPlaying(null);
-      setIsPlaying(false);
-      console.log(data.id);
-      response = await axios.get('https://kr.api.riotgames.com/lol/spectator/v4/active-games/by-summoner/' + data.id + '?api_key=RGAPI-2cffc6cb-251a-446c-b803-e21414a70b1c');
-      setLoading(false);
-      console.log(response);
-    }
-    catch(error) {
-      console.log(error);
-    }
-  }
   if (loading) return <div>loading...</div>
   if (error) return <div>error...summoner</div>
   if (!data) return null;
-  let _puuid = data.puuid;
   const src_profile = process.env.PUBLIC_URL + '/images/profileicon/' + data.profileIconId + '.png';
   return (
     <>
@@ -80,13 +90,13 @@ export default function Summoner() {
           </div>
         </div>
       </div>
-      {data.id}
+      {isPlaying?<InGame data={inGame}></InGame>:null}
       <div style={{ display: 'flex' }}>
         <div style={{ width: '40%', color: 'white' }}>
           <User_Rank id={data.id}></User_Rank>
         </div>
-        <div style={{ width: '60%' }}>
-          <Match puuid={_puuid}></Match>
+        <div style={{ width: '60%',margin:'5' }}>
+          <Match puuid={data.puuid}></Match>
         </div>
       </div>
     </>

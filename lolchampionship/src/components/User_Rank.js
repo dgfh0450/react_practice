@@ -35,7 +35,6 @@ export default function User_Rank(props) {
           }
         setLoading(false);
     }
-
     useEffect(() => {
         fetchData();
     }, [])
@@ -51,7 +50,7 @@ export default function User_Rank(props) {
     return (
         <div>
 
-            <div style={{ backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', fontSize: '20px', padding: '10px' }}>솔로 랭ㅋ</div>
+            <div style={{ backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', fontSize: '20px', padding: '10px' }}>솔로 랭크</div>
             <div name="solo"><Rank data={rankData.solo}></Rank></div>
 
             <div style={{ backgroundColor: '#31313c', borderRadius: '3px', margin: '5px', fontSize: '20px', padding: '10px' }}>자유 랭크</div>
